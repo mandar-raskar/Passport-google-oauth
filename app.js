@@ -102,8 +102,8 @@ passport.deserializeUser(function(id, done) {
 });
 
 passport.use(new GoogleStrategy({
-    clientID:     '473347811574-sho7a9qjrj9lkq2381fcsk2hek02qd7g.apps.googleusercontent.com',
-    clientSecret: 'MtZbuUtpqCBOfqapckFGzHBl',
+    clientID:    'GOOGLE_CLIENT_ID',
+    clientSecret: 'GOOGLE_CLIENT_SECRET',
     callbackURL: "http://localhost:3004/auth/google/callback",
     // passReqToCallback   : true
   },
@@ -128,8 +128,8 @@ app.get( '/auth/google/callback',
 ///////
 /////
 // passport.use(new GoogleStrategy({
-//     consumerKey: '473347811574-sho7a9qjrj9lkq2381fcsk2hek02qd7g.apps.googleusercontent.com',
-//     consumerSecret:'1IGTx0VpLG29LAt6RGyLEark',
+//     consumerKey: 'GOOGLE_CLIENT_ID',
+//     consumerSecret:'GOOGLE_CLIENT_SECRET',
 //     callbackURL: "http://localhost:4200/auth/google/callback"
 //   },
 //   function(token, tokenSecret, profile, done) {
@@ -141,8 +141,8 @@ app.get( '/auth/google/callback',
 //////
 
 // passport.use(new GoogleStrategy({
-//     clientID: '473347811574-sho7a9qjrj9lkq2381fcsk2hek02qd7g.apps.googleusercontent.com',
-//     clientSecret: '1IGTx0VpLG29LAt6RGyLEark' ,
+//     clientID: 'GOOGLE_CLIENT_ID',
+//     clientSecret: 'GOOGLE_CLIENT_SECRET' ,
 //     callbackURL: "http://localhost:4200/auth/google/callback"
 //   },
 //   function(accessToken, refreshToken, profile, done) {
@@ -214,8 +214,8 @@ app.get( '/auth/google/callback',
 //   credentials (in this case, an accessToken, refreshToken, and Google
 //   profile), and invoke a callback with a user object.
 // passport.use(new GoogleStrategy({
-//     clientID:  '473347811574-tl9mffab4lne3070f3fglhe4mu3a9ql5.apps.googleusercontent.com',
-//     clientSecret: '1IGTx0VpLG29LAt6RGyLEark',
+//     clientID:  'GOOGLE_CLIENT_ID',
+//     clientSecret: 'GOOGLE_CLIENT_SECRET',
 //     callbackURL: "http://www.example.com/auth/google/callback"
 //   },
 //   function(accessToken, refreshToken, profile, done) {
